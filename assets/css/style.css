@@ -53,12 +53,12 @@ body{
 }
 
 .btn-main{
-    background-color: var(--Off-black);
+    background-color: var(--Purple);
     border-radius: 50%;
     padding: 0.938rem;
 }
 .btn-main:hover{
-    background-color: var(--Purple);
+    background-color: var(--Off-black);
 }
 /*  */
  .separator {
