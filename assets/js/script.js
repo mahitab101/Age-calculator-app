@@ -9,7 +9,7 @@ function calcAge() {
    document.querySelector('.date-error').innerHTML="this filed is required ";
    document.getElementById("date").classList.add("error");
   }
-  else if (bDay>32){
+  else if (isNaN(bDay) || bDay <= 0 || bDay > 31){
     document.querySelector('.date-error').innerHTML="Must be a valid date";
     document.getElementById("date").classList.add("error");
    }
@@ -17,7 +17,7 @@ function calcAge() {
     document.querySelector('.month-error').innerHTML="this filed is required ";
     document.getElementById("month").classList.add("error");
    }
-   else if (bMonth>12){
+   else if (isNaN(bMonth) || bMonth <= 0 || bMonth > 12) {
     document.querySelector('.month-error').innerHTML="Must be a valid date";
     document.getElementById("date").classList.add("error");
    }
